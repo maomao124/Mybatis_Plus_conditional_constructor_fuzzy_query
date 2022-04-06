@@ -39,8 +39,14 @@ import static org.junit.jupiter.api.Assertions.*;
  * 例: likeRight("name", "王") ---> name like '王%'
  */
 
+
 class StudentMapperTest
 {
+    /**
+     * Like.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void like() throws IOException
     {
@@ -66,6 +72,11 @@ class StudentMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Not like.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void notLike() throws IOException
     {
@@ -91,6 +102,11 @@ class StudentMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Like left.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void likeLeft() throws IOException
     {
@@ -116,6 +132,11 @@ class StudentMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Like right.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void likeRight() throws IOException
     {
